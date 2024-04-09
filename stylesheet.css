@@ -5,7 +5,7 @@ header {
 	justify-content: space-between;
 }
 
-/*customization of the body */
+
 body {
 	background-color:#d6d6d6;
 	font-family: helvetica, arial, sans-serif;
@@ -15,7 +15,7 @@ body {
 * {
 	box-sizing: border-box;
 }
-/*customizing the headers */
+
 h1{
 	padding-top:50px;
 	padding-left: 5px;
@@ -38,6 +38,9 @@ text-align:center;
  
 }
 
+p{
+	text-align:center;
+}
 /* Inspiration for the Navigation bar was taken from work done by Craig Jurkiewicz and Lori Lowry in Geom101 in 2023*/
 
 /* Customization of the navigation bar */
@@ -47,10 +50,6 @@ text-align:center;
 	transition: .3s ease-in-out;
 }
 
-
-p{
-	text-align:center;
-}
 /* Customization of the links in the navigation bar */
 .navbar a {
 	float: left;
@@ -210,13 +209,11 @@ p{
 	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
 }
 
-/* inspiration for the column and rows were taken from w3 schools
-https://www.w3schools.com/howto/howto_css_two_columns.asp */
 .column {
 	float: left;
 	width: 50%;
 	padding: 10px;
-	 
+	height: 300px; /* Should be removed. Only for demonstration */
   }
   
   /* Clear floats after the columns */
@@ -231,3 +228,36 @@ https://www.w3schools.com/howto/howto_css_two_columns.asp */
 	padding-top: 50px;
 	padding-bottom: 50px;
   }
+
+.leafletbutton{
+	border: none;
+	
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0 auto;
+	cursor: pointer;
+	border-radius:25px;
+	display:flex;
+	align-items: center;
+  position: relative;
+	
+}
+.leafletbutton a{
+	float: left;
+	font-size: 16px;
+	color: rgb(131, 95, 75);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+}
+.leafletbutton a:hover{
+	background-color: #323131;
+	transition: 0.3s;
+	border-radius:25px;
+
+}
+  
