@@ -4,7 +4,8 @@
 <head>
 	<!-- Title of our website, to appear in page tab -->
 	<title>Understanding Walkability Factors, from Citizen to City Planner</title>
-	
+	<!-- Favicon Icon is taken from https://www.flaticon.com/ -->
+	<link rel="icon" href="images/topography.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- External link to stylesheet -->
 	<link rel="stylesheet" href="stylesheet.css">
@@ -27,7 +28,7 @@
 	<a href="team.html">Meet the Team</a>
 	<div class="dropdown">
 		<button class="dropbtn">Solutions</button>
-		<!-- dropdown menu to all solutions -->
+		<!-- Industries dropdown menu content -->
 		<div class="dropdown-content">
 			<a href="storymap.html">Storymap</a>
 			<a href="eleaflet.html" class="active">Leaflet</a>
@@ -44,10 +45,12 @@
 <!-- JS script for hamburger menu animation and responsive navbar -->
 <script src="javascript.js"></script>
 
-<img src="leafletmap.jpeg" alt="Logo for Leaflet" style="width:100%;min-height:350px;max-height:300px;">
+<img src="logo.jpeg" alt="Logo for Leaflet" style="width:100%;min-height:350px;max-height:300px;">
 <h1> Leaflet</h1>
 <p>Leaflet is an open source javascript library for mobile-friendly interactive maps.  For a possible solution to our problem statement, our team attempted to create a web map (without the use of any API) to show off walkability index's within the united states.  This map would include a geolocator as well so civillians could walk around their own neighborhood and see how well their walkability indexes compare to other areas.  Below we have a list compiled of what worked well for this potential solution and what could be improved upon</p>
-
+<div class = "leafletlink">
+    <button class="leafletbutton"><a href="walkability.html">Check out our Leaflet Map</a></button>
+ 
 <div class="row">
     <div class="column" style="background-color:#aaa;">
       <h2>Positives</h2>
@@ -58,6 +61,7 @@
         <li>Can earily update map as new data becomes avialable</li>
     </ul>
     </div>
+    
     <div class="column" style="background-color:#bbb;">
       <h2>Negatives</h2>
       <li>Limited file size with GeoJSon data</li>
