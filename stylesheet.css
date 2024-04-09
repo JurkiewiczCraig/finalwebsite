@@ -63,7 +63,7 @@ p{
 
 /* Selects active class for current page */
 .active {
-	background-color: #637e77;
+	background-color: #3b3c3b;
 	color: white;
 }
 
@@ -87,7 +87,7 @@ p{
 
 /* Customization of the navigation bar links when mouse hovers over them */
 .navbar a:hover, .dropdown:hover .dropbtn {
-	background-color: #7ea69c;
+	background-color: #3e4140;;
 	transition: 0.3s;
 }
 
