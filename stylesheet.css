@@ -5,7 +5,7 @@ header {
 	justify-content: space-between;
 }
 
-
+/*customization of the body */
 body {
 	background-color:#d6d6d6;
 	font-family: helvetica, arial, sans-serif;
@@ -15,7 +15,7 @@ body {
 * {
 	box-sizing: border-box;
 }
-
+/*customizing the headers */
 h1{
 	padding-top:50px;
 	padding-left: 5px;
@@ -47,6 +47,10 @@ text-align:center;
 	transition: .3s ease-in-out;
 }
 
+
+p{
+	text-align:center;
+}
 /* Customization of the links in the navigation bar */
 .navbar a {
 	float: left;
@@ -205,3 +209,11 @@ text-align:center;
 	.change .bar2 {opacity: 0;}
 	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
 }
+
+
+  footer{
+	position:static;
+	Background-color: grey;
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
