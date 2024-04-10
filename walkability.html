@@ -164,10 +164,10 @@ function highlightFeature(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 5,
+        weight: 7,
         color: '#666',
         dashArray: '',
-        fillOpacity: 0.7
+        fillOpacity: 1
     });
 
     layer.bringToFront();
@@ -209,7 +209,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
     this._div.innerHTML = '<h4>US Walkability Index of Each Census Block</h4>' +  (props ?
           '<b>' +'This Cenus block has a Walkability Factor of ' +'<br />' + props.NatWalkInd.toFixed(2) + ' Out of 20'
-        : 'Hover over a Census Block'+ '</b>');
+        : 'Hover the mouse over a Census Block'+ '</b>');
 	
 };
 
