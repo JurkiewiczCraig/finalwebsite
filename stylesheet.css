@@ -23,11 +23,13 @@ h1{
 font-family:'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
 text-align:center;
 }
+
 h6{
 margin:40px;
 text-align:center;
 font-size:40px;
 }
+
 .home{
 font-family:'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
 text-align:center;
@@ -37,7 +39,7 @@ font-size:30px;
 text-align:center;
  
 }
-
+/* aligning text */
 p{
 	text-align:center;
 }
@@ -78,7 +80,7 @@ p{
 	font-size: 16px;  
 	border: none;
 	outline: none;
-	color: white;
+	color: #232b2b ;
 	padding: 14px 16px;
 	background-color: inherit;
 	font-family: inherit;
