@@ -83,7 +83,7 @@ and https://leafletjs.com/examples/choropleth/ -->
     
 
 
-  <!-- adding accuracy to the geolocator-->
+  <!--  gettomg a higher accuracy on the geolocator, how long the system will take to get the location before timing out and how long the device will take before getting an updated position (all in milliseconds)-->
 const options = {
     enableHighAccuracy: true, 
     timeout: 5000, 
@@ -198,11 +198,11 @@ geojson = L.geoJson(WalkIndex, {
     onEachFeature: onEachFeature
 }).addTo(map);
 
-
+<!--creating a custom control/interface that interacts with the map to show the user the walkability index of whatever regions they hover around with the mouse  -->
 var info = L.control();
 
 info.onAdd = function (map) {
-    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this._div = L.DomUtil.create('div', 'info');  "
     this.update();
     return this._div;
 };
