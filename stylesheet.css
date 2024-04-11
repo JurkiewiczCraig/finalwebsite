@@ -246,8 +246,8 @@ p{
  
 }
   .leafletbutton a:link, a:visited {
-	background-color: #555555 ;
-	color: white;
+	background-color: #555555;
+	color: #232b2b ;
 	padding: 14px 25px;
 	text-align: center;
 	text-decoration: none;
