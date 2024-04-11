@@ -23,11 +23,13 @@ h1{
 font-family:'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
 text-align:center;
 }
+
 h6{
 margin:40px;
 text-align:center;
 font-size:40px;
 }
+
 .home{
 font-family:'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
 text-align:center;
@@ -37,11 +39,11 @@ font-size:30px;
 text-align:center;
  
 }
-
+/* aligning text */
 p{
 	text-align:center;
 }
-/* Inspiration for the Navigation bar was taken from work done by Craig Jurkiewicz and Lori Lowry in Geom101 in 2023*/
+/* Inspiration for the Navigation bar was taken from work done by https://github.com/JurkiewiczCraig/a3web */
 
 /* Customization of the navigation bar */
 .navbar {
@@ -109,14 +111,7 @@ p{
 	text-decoration: none;
 	display: block;
 	text-align: left;
-	
-
-	}
-
-	.dropdown-content a:visited {
-		color: #3b444b ;
-
-	}
+}
 	/* Fade in animation for the drop down menu for several different browsers */
 	animation-duration: 0.5s;
     animation-name: fadeInFromNone;
@@ -127,8 +122,11 @@ p{
     -ms-animation-duration: 0.5s;
     -ms-animation-name: fadeInFromNoneIE;
     -ms-animation-fill-mode: forwards;
+}
+	.dropdown-content a:visited {
+		color: #3b444b ;
 
-
+	}
 /* Key frames animation webkit for older versions of chrome and safari */
 @-webkit-keyframes fadeInFromNone {
     0% {opacity: 0}
@@ -150,7 +148,7 @@ p{
 
 /* Customization of the navigation bar dropdown text when mouse hovers over them */
 .dropdown-content a:hover {
-	background-color: #e0e0e0;
+	background-color: #232b2b;
 }
 
 /* Shows the dropdown menu on hover */
@@ -237,25 +235,6 @@ p{
 	padding-bottom: 50px;
   }
 
-
- 
-	 
-/* stylizing the button on the leaflet page to connect users to the leaflet map */
-.leafletbutton{
-	border: none;
-	
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	 text-color: white;
-	font-size: 16px;
-	margin: 0 auto;
-	cursor: pointer;
-	border-radius:25px;
-	justify-content: center;
-	align-items: center;
- 
-}
   .leafletbutton a:link, a:visited {
  
 	padding: 14px 25px;
@@ -264,7 +243,3 @@ p{
 	display: inline-block;
   }
   
-  .leafletbutton a:hover, a:active {
-	background-color: Black;
-	  transition: .3s ease-in-out;
-  }
