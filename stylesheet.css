@@ -15,7 +15,7 @@ body {
 * {
 	box-sizing: border-box;
 }
-
+/* customziing the headers */
 h1{
 	padding-top:50px;
 	padding-left: 5px;
@@ -29,7 +29,7 @@ margin:40px;
 text-align:center;
 font-size:40px;
 }
-
+/* aligning text */
 .home{
 font-family:'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
 text-align:center;
@@ -39,10 +39,8 @@ font-size:30px;
 text-align:center;
  
 }
-/* aligning text */
-p{
-	text-align:center;
-}
+
+
 /* Inspiration for the Navigation bar was taken from work done by https://github.com/JurkiewiczCraig/a3web */
 
 /* Customization of the navigation bar */
@@ -214,12 +212,12 @@ p{
 	.change .bar2 {opacity: 0;}
 	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
 }
-
+/* two column layout whas inspired by https://www.w3schools.com/howto/howto_css_two_columns.asp*/
 .column {
 	float: left;
 	width: 50%;
 	padding: 10px;
-	height: 300px; /* Should be removed. Only for demonstration */
+ 
   }
   
   /* Clear floats after the columns */
@@ -228,6 +226,7 @@ p{
 	display: table;
 	clear: both;
   }
+/* stylizing the footer */
   footer{
 	position:static;
 	Background-color: grey;
