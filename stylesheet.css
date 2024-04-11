@@ -258,5 +258,6 @@ p{
   
   .leafletbutton a:hover, a:active {
 	background-color: Black;
+	  transition: .3s ease-in-out;
   }
   
