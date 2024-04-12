@@ -212,11 +212,10 @@ text-align:center;
 	.change .bar2 {opacity: 0;}
 	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
 }
-/* two column layout whas inspired by https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+/* two column layout whas inspired by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns*/
 .column {
-	float: left;
-	width: 50%;
-	padding: 10px;
+	 float: left;
+  width: 33.33%;
  
   }
   
