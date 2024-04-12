@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--nav bar design and hamburger icon was inspired by github repository 
+	https://github.com/JurkiewiczCraig/a3web -->
+<head>
+	<!-- Title of our website, to appear in page tab -->
+	<title>Insights on EPA National Walkability</title>
+	<!-- Favicon Icon is taken from https://www.flaticon.com/ -->
+	<link rel="icon" href="images/topography.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- External link to stylesheet -->
+	<link rel="stylesheet" href="stylesheet.css">
+	
+	
+<body>
+ 
+
+
+<div class="navbar" id="myNav">
+	<!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+	<div class="hamburger" onclick="responsiveNav(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	  </div>
+	<a href="Web14.html" class="active">Home</a>  
+	<a href="team.html">Meet the Team</a>
+	<a href="expbuilder.html">Attempted Solutions</a>
+	<div class="dropdown">
+		<button class="dropbtn">Solutions</button>
+		<!-- Solutions dropdown menu content -->
+		<div class="dropdown-content">
+			<a href="storymap.html">Storymap</a>
+			<a href="eleaflet.html">Leaflet</a>
+			<a href="insights.html">Insights</a>
+			<a href="instantapps.html">Web Apps</a>
+			
+		</div> 
+	</div>
+	
+ 
+</div>
+
+<!-- JS script for hamburger menu animation and responsive navbar -->
+<script src="javascript.js"></script>
+
+
+ 
+<div>
+    <div class = "dashboard-header">
+
+    </div>
+
+ <!-- Ashwin - Showcasing the Title for this project along with the problem statements starts-->
+ <h1>Insights for EPA National Walkability Index</h1>
+ <img class ="inimage" src="/images/insightsupdate.png" alt="Insights">
+ <!-- Ashwin - Showcasing the Title for this project along with the problem statements starts-->
+
+  <!-- Ashwin - Button link to insights starts-->
+ <div class="container">
+	<div class="center">
+		<a class = "btn" href="https://insights.arcgis.com/#/edit/394e0fa518214452b887e4f46e011305" target="_blank">Go to Insights</a>
+	</div>
+  </div>
+  <!-- Ashwin - Button link to insights ends-->
+
+ <!-- Ashwin - Content for insights starts-->
+ <div class = "insight">
+    <h2>Why Insights?</h2>
+    <div class="steps">ArcGIS Insights provides a powerful and user-friendly platform for visual data exploration, spatial analysis, and advanced analytics, helping organizations make more informed decisions.</div>
+	  <!-- Ashwin - Table for insights starts-->
+	  <table class="intab">
+		<tr>
+		  <th>Positives</th>
+		  <th>Negatives</th>
+		  <th>Future Iterations</th>
+		</tr>
+		<tr>
+		  <td>Interactive data exploration</td>
+		  <td>Limited Customization</td>
+		  <td>Can work more on statistical analysis</td>
+		</tr>
+		<tr>
+		  <td>Advanced Analytics</td>
+		  <td>Requires time to explore complex functionalities</td>
+		  <td>Create more dynamic and interative visualizations</td>
+		</tr>
+		<tr>
+		  <td>Collaboration features</td>
+		  <td>Not available without internet connection</td>
+		  <td>Customize maps to convey meaningful insights</td>
+		</tr>
+		<tr>
+		  <td>Attractive charts</td>
+		  <td>Needs subscription/lisence</td>
+		  <td></td>
+		</tr>
+	  </table>
+	  <!-- Ashwin - Table for insights ends-->
+ <h2>What was intresting?</h2>
+ <div class="steps">The intresting part in ArcGIS Insights is that we can perform various statistcial analysis and has a model builder like interface to do them. Also there are various charts to visualize the data making the analyis more attractive. </div>
+ <img class ="inimagemob" src="/images/analysisview.png" alt="Insights">
+<!-- Ashwin - Content for insights ends-->
+
+	  
+
+
+  <footer>
+    <p>@2024 Group14 Productions All rights reserved </p>
+  </footer>
+</html>
+
+
 
