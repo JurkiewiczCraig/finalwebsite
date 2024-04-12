@@ -110,7 +110,7 @@ text-align:center;
 	text-decoration: none;
 	display: block;
 	text-align: left;
-}
+
 	/* Fade in animation for the drop down menu for several different browsers */
 	animation-duration: 0.5s;
     animation-name: fadeInFromNone;
