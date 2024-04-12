@@ -7,7 +7,7 @@
 	https://www.w3schools.com/howto/howto_css_two_columns.asp-->
 <head>
 	<!--title for this page  -->
-	<title>Leaflet as a Solution</title>
+	<title>Leaflet as a Potential Solution</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- External link to stylesheet -->
@@ -50,16 +50,27 @@
 
 <img src="images/leafletmap.jpeg" alt="Screenshot of Leaflet Map" style="width:100%;min-height:350px;max-height:300px;">
 <h1> Leaflet</h1>
-<p class = "home">Leaflet is an open source javascript library for mobile-friendly 
+<p class = "home">Leaflet is an open source javascript library for desktop as well as mobile-friendly 
 	interactive maps.  For a possible solution to our problem statement
-	, our team attempted to create a web map (without the use of any API)
-	to show off walkability index's within the united states.  
-	This map would include a geolocator as well so users 
-	could walk around their own neighborhood and see how well
-	their walkability indexes compare to other areas.  Below we 
-	have a list of what worked well with this potential solution and what issues came up.  Along with potential ideas 
-of what other things could be implemented in future designs </p>
+	, our team attempted to create a web map (keeping all elements of the map as open source as possible)
+	to show off walkability index's within the United States.  
+	This would allow members of the public, as well as cuty planners
+	to get a better understanding of how walkable their surrounding neighborhoods 
+	are, all without the use of purchasing any Esri Licenses.  The final
+	map that was created was able to show off how walkable areas of New York
+	City area based on individual census blocks.  With each census block 
+	being outlined, with it's individual walkability score being outlined when 
+	the user hovered over the area with their mouse.
+	</p>
 
+	<P>This process involved several steps, from laying down a greyscale basemap (taken from Open Street Maps), to 
+	taking data from ArcGIS Pro, clipping it down to only showcase the data from New York City, and converting it into a GeoJSON format in ArcGIS Pro and changing the file name to a .js</P>
+	
+	<P>From there, the data was then brought into GitHub and a variable was assigned to the GeoJSon file.  From there the data was brought into the map, laying ontop of the previously created greyscale map</P>
+	<p>After the layer was brought in, interactivity was introduced, by having the individual census block become highlighted whenver the mouse
+	was hovering over the area, as well as a small info window to showcase what the individual walkability score of that area was</p>
+	<p>A geolocator was added to the map, to allow for users to walk around the area and see the walkability scores of their individual areas area 
+	as they walk around the city</p>
 <div class = "leafletbutton">
     <a href="walkability.html">Check out our Leaflet Map </a>
 	</div>
