@@ -11,6 +11,7 @@ and https://leafletjs.com/examples/choropleth/ -->
 
     <!-- Load Leaflet from CDN -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <!-- Load Esri Leaflet from CDN -->
     <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js"></script>
     <script src="https://unpkg.com/esri-leaflet-vector@4.2.3/dist/esri-leaflet-vector.js"></script>
@@ -30,15 +31,15 @@ and https://leafletjs.com/examples/choropleth/ -->
       height: 100%;
       width: 100%;}
 
-	<!--adding style to the legend and the information on the legend -->
+	<!--adding style to the legend and the information ont he legend -->
 .legend {
     line-height: 18px;
-    color: #262626;
-	background:#FFFAF0;
+    color: #555;
+	background:#ffffff;
 	padding: 6px 8px;
 	background:rgba(255,255,255,0.8);
 	box-shadow:0 0 15px rgba(0,0,0,0.2);
-	border-radius: 15px;
+	border-radius: 5px;
 	display:flex;
 	 align-items: center;
 }
@@ -50,18 +51,17 @@ and https://leafletjs.com/examples/choropleth/ -->
     opacity: 0.7;
 	
 }
-<!--adding style to the info window -->
+
 .info {
     padding: 6px 8px;
     background: white;
-    font-size: 30px
     background: rgba(255,255,255,0.8);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 15px;
+    border-radius: 5px;
 }
 .info h4 {
     margin: 0 0 5px;
-    color: #FFFAF0;
+    color: #777;
 }
 
     </style>
@@ -83,7 +83,7 @@ and https://leafletjs.com/examples/choropleth/ -->
     
 
 
-  <!--  gettomg a higher accuracy on the geolocator, how long the system will take to get the location before timing out and how long the device will take before getting an updated position (all in milliseconds)-->
+  <!-- adding accuracy to the geolocator-->
 const options = {
     enableHighAccuracy: true, 
     timeout: 5000, 
@@ -146,7 +146,7 @@ function getColor(d) {
 
 
 	
-	    <!-- adding style to the feature NatWalkInd with the combined colors from the code above-->
+	    <!-- adding style to the feature NatWalkInd with the combined colors frmo the code above-->
 function style(feature) {
     return {
         fillColor: getColor(feature.properties.NatWalkInd),
@@ -154,10 +154,9 @@ function style(feature) {
         opacity: 1,
         color: 'white',
         dashArray: '3',
-        fillOpacity: 0.3
+        fillOpacity: 0.7
     };
 }
-
  L.geoJson(WalkIndex, {style: style}).addTo(map);
  
 	    <!--adding a function for the layer to highlight when the mouse hobers over it with style included -->
@@ -165,10 +164,10 @@ function highlightFeature(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
+        weight: 5,
         color: '#666',
         dashArray: '',
-        fillOpacity: 0.3
+        fillOpacity: 0.7
     });
 
     layer.bringToFront();
@@ -198,11 +197,11 @@ geojson = L.geoJson(WalkIndex, {
     onEachFeature: onEachFeature
 }).addTo(map);
 
-<!--creating a custom control/interface that interacts with the map to show the user the walkability index of whatever regions they hover around with the mouse  -->
+
 var info = L.control();
 
 info.onAdd = function (map) {
-    this._div = L.DomUtil.create('div', 'info');  "
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
     this.update();
     return this._div;
 };
@@ -210,7 +209,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
     this._div.innerHTML = '<h4>US Walkability Index of Each Census Block</h4>' +  (props ?
           '<b>' +'This Cenus block has a Walkability Factor of ' +'<br />' + props.NatWalkInd.toFixed(2) + ' Out of 20'
-        : 'Hover the mouse over a Census Block'+ '</b>');
+        : 'Hover over a Census Block'+ '</b>');
 	
 };
 
