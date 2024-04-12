@@ -115,29 +115,30 @@ is found.</p>
 	<img src="images/leafletmap.jpeg" alt="Screenshot of Leaflet Map" style="width:100%;min-height:350px;max-height:300px;">
 <h1> Leaflet</h1>
 <p class = "home">Leaflet is an open source javascript library for desktop as well as mobile-friendly 
-	interactive maps.  For a possible solution to our problem statement
-	, our team attempted to create a web map (keeping all elements of the map as open source as possible)
-	to show off walkability indexes within the United States.  
+	interactive maps.  For a possible solution to our problem statement, our team attempted to create a web map (keeping all elements of the map open-source)
+	to show off walkability indexes and other factors within the United States.  
 	This would allow members of the public, as well as city planners
 	to get a better understanding of how walkable their surrounding neighborhoods 
-	are, all without the use of purchasing any Esri Licenses.  The final
+	are, all without the use of purchasing any Esri products, and could potentially modify the map on their own.  The final
 	map that was created was able to show off how walkable areas of New York
 	City area based on individual census blocks.  With each census block 
-	being outlined, with it's individual walkability score being outlined when 
+	being outlined, with it's individual walkability score being shown in an info box when 
 	the user hovered over the area with their mouse.
 	</p>
 <!--Going over the process of how I was able to create the leaflet map -->
 	<p class = "home">This process involved several steps, from laying down a greyscale basemap (taken from https://github.com/Zverik/leaflet-grayscale?tab=readme-ov-file), to 
-	taking data from ArcGIS Pro, clipping it down to only showcase the data from New York City, and converting it into a GeoJSON format in ArcGIS Pro and changing the file name to a .js</P>
+	taking the EPA walkbility index data from the ArcGIS online Portal, clipping it down to only include the data from New York City, and converting it into a GeoJSON format in ArcGIS Pro</P>
 	<img src="images/codeforgreyscale.jpg" alt="Showcasing code used to bring a greyscale basemap using Leaflet" style="width:100%;min-height:350px;max-height:300px;">
 	<img src="images/arcgisproNewYork.jpg" alt="Screenshot of how I used ArcGIS Pro to convert a clipped feature layer into a GeoJSon Format" style="width:100%;min-height:350px;max-height:300px;">
 
-	<p class = "home">From there, the data was then brought into GitHub and a variable was assigned to the GeoJSon file.  There the data was brought into the map, laying ontop of the previously created greyscale map</P>
+	<p class = "home">From there, the data was then brought into GitHub and a variable was assigned to the GeoJSon file to be used in leaflet. 
+		There the data was brought into the map, being placed
+		ontop of the previously created greyscale map with the data being displayed via a choropleth map, based off of the areas individual walkability score</P>
 	<img src="images/jsonvariable.jpg" alt="assigning the GeoJSon data to a variable" style="width:100%;height:100%;">
  
 	<p class = "home">After the layer was brought in, interactivity was introduced, by having the individual census block become highlighted whenver the mouse
-	was hovering over the area, as well as a small info window to showcase what the individual walkability score of that area was</p>
-	<img src="images/highlight.jpg" alt="Screenshot code used to highlight census block data when the mouse hovers over it" style="width:100%;min-height:350px;max-height:300px;">
+	was hovering over the area, as well as a small info window to showcase what the individual walkability score of that census block as well as a legend.</p>
+	<img src="images/highlight.jpg" alt="Screenshot of code used to highlight census block data when the mouse hovers over it" style="width:100%;min-height:350px;max-height:300px;">
 	<p class = "home">A geolocator was added to the map, to allow for users to walk around the area and see the walkability scores of their individual areas area 
 	as they walk around the city</p>
 	<img src="images/geolocation.jpg" alt="Screenshot of code used to create the geolocator Map" style="width:100%;height:100%;">
