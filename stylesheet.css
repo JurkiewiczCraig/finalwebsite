@@ -266,3 +266,92 @@ text-align:center;
   .gallery{
 	margin-top: 25px;
   }
+
+/* Ashwin - style for dashboard images for desktop starts */
+.dashimage{
+    height: 800px;
+    width: 1500px;
+    border: none;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+/* Ashwin - style for dashboard images for desktop ends */
+
+/* Ashwin - style for dashboard images for mobile starts */
+.dashimagemob{
+    border: none;
+	justify-content: center;
+    align-content: center;
+    padding-left: 600px;
+    padding-right: 5px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+/* Ashwin - style for dashboard images for mobile ends */
+
+/* Ashwin - style for dashboard button starts */
+.container { 
+	height: 200px;
+	position: relative;
+	border: 3px solid #a0a0a0; 
+  }
+  
+  .center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+
+  .btn:link, .btn:visited {
+	background-color: rgb(77, 77, 77);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(201, 201, 201);
+	padding: 15px 20px;
+	margin: auto;
+	align-content: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	justify-content: center;
+  }
+  
+  .btn:hover, .btn:active {
+	background-color: rgb(65, 119, 65);
+	color: white;
+  }
+/* Ashwin - style for dashboard button ends */
+
+/* Ashwin - style for dashboard writeups starts */
+.steps{
+	font-size: large;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 50px;
+}
+/* Ashwin - style for dashboard writeups ends */
+
+/* Ashwin - style for dashboard table starts */
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
+/* Ashwin - style for dashboard table ends */
