@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--nav bar design and hamburger icon was inspired by github repository 
+	https://github.com/JurkiewiczCraig/a3web -->
+	
+	<!--inspiration for the two column layout was taken from
+	https://www.w3schools.com/howto/howto_css_two_columns.asp-->
+	
+<head>
+	<!--title for this page  -->
+	<title>StoryMap</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- External link to stylesheet -->
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+	
+<body>
+<div class="navbar" id="myNav">
+	<!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+	<div class="hamburger" onclick="responsiveNav(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	  </div>
+	<a href="Web14.html">Home</a>  
+	<a href="team.html">Meet the Team</a>
+	<a href="expbuilder.html">Attempted Solutions</a>
+	<div class="dropdown">
+		<button class="dropbtn">Solutions</button>
+		<!-- Solutions dropdown menu content -->
+		<div class="dropdown-content">
+			<a href="storymap.html">Storymap</a>
+			<a href="eleaflet.html"class="active">Leaflet</a>
+			<a href="insights.html">Insights</a>
+			<a href="instantapps.html">Web Apps</a>
+		</div> 
+	</div>
+</div>
+
+<!-- JS script for hamburger menu animation and responsive navbar -->
+<script src="javascript.js"></script>
+
+<h1>StoryMaps</h1>
+<p class = "home">StoryMaps is an ESRI app that allows for the creation of interactive digital presentations that can present maps and other information in easily-accessible, 
+user-friendly ways. As our problem statement involved creating user-friendly maps that introduce walkability factors to those with little understanding of the subject, StoryMaps 
+immediately jumped out as a potential solution. The StoryMap created by our group breaks down the EPA's walkability index into its component factors and displays them across multiple 
+geographies: the United States as a whole, the City of Joplin, Missouri, and the City of Austin, Texas. In addition to displaying the four main factors themselves (intersection density, 
+distance to transit, employment mix, and employment-housing mix), the StoryMap also shows some comparisons and relationships between other data present in the index layers. For example, there is 
+a comparison between zero-car households and low-wage employees for Joplin that shows where there might be many low-wage </p>
+<p class = "home"></p>
+
+<div class = "leafletbutton">
+    <a href="insert link">Check out our Experience Builder app</a>
+	</div>
+	
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>What Worked Well</h2>
+     <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    </div>
+    
+    <div class="column" style="background-color:#bbb;">
+      <h2>What Went Wrong</h2>
+	    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+	    </ul>
+    </div>
+  </div>
+
+<div style="text-align:center;">
+<img class="gallery" src="images/experiencebuilder1.PNG" alt="Screenshot of Missouri Experience Builder app" style="height:700px;">
+<p class="home">An overview of the Missouri Experience Builder app.</p>
+<img class="gallery" src="images/experiencebuilder2.PNG" alt="Missouri Experience Builder app chart" style="height:700px;">
+<p class="home">The Missouri Experience Builder app's pie chart functionality.</p>
+<img class="gallery" src="images/experiencebuilder3.PNG" alt="Missouri Experience Builder app mobile" style="height:700px;">
+<p class="home">The Missouri Experience Builder app's mobile layout, including the layout issues described above.</p>
+</div>
+
+ 
+  <footer>
+    <p>@2024 Group14 Productions All rights reserved </p>
+  </footer>
+ </body>
+</html>
