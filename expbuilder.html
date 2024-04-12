@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <!--nav bar design and hamburger icon was inspired by github repository 
+	https://github.com/JurkiewiczCraig/a3web -->
+	
+	<!--inspiration for the two column layout was taken from
+	https://www.w3schools.com/howto/howto_css_two_columns.asp-->
+<head>
+	<!--title for this page  -->
+	<title>Leaflet as a Solution</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- External link to stylesheet -->
+	<link rel="stylesheet" href="stylesheet.css">
+
+</head>
+	
+<body>
+ 
+
+
+<div class="navbar" id="myNav">
+	<!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+	<div class="hamburger" onclick="responsiveNav(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	  </div>
+	<a href="Web14.html">Home</a>  
+	<a href="team.html">Meet the Team</a>
+	<a href="expbuilder.html">Attempted Solutions</a>
+	<div class="dropdown">
+		<button class="dropbtn">Solutions</button>
+		<!-- Solutions dropdown menu content -->
+		<div class="dropdown-content">
+			<a href="storymap.html">Storymap</a>
+			<a href="eleaflet.html"class="active">Leaflet</a>
+			<a href="insights.html">Insights</a>
+			<a href="instantapps.html">Web Apps</a>
+			
+		</div> 
+	</div>
+	
+ 
+</div>
+
+
+<!-- JS script for hamburger menu animation and responsive navbar -->
+<script src="javascript.js"></script>
+
+<img src="experiencebuilder1.PNG" alt="Screenshot of Missouri Experience Builder app" style="display:block;margin-left:auto;margin-right:auto;width:50%;">
+<h1>Experience Builder</h1>
+<p class = "home">Experience Builder is an ESRI product that allows for the creation of web
+apps using a drag-and-drop app builder. In pursuing our problem statement's objective of 
+creating some complex apps that would be useful to people with an existing understanding of walkability, 
+the group created an Experience Builder app that does several things. First, it displays a map of the 
+core-based statistical areas in the state of Missouri along with a map of the EPA's final walkability index, 
+with a slider allowing for a direct comparison of the two maps. This allows for quick observation of 
+walkability in different CBSAs. Next, it shows a table that ranks census block groups within the state 
+from most to least walkable, with the components of the index and the block group's associated CBSA also 
+listed. When an entry is clicked, the map zooms in on the selected block group. In addition to this, when a 
+block group is clicked on the map, a chart element on the right reads out the employment mix within that 
+block group as a pie chart. While this information wouldn't make much sense to a person unfamiliar with 
+walkability indexes, someone familiar with what the numbers mean could use this app to come to quick 
+conclusions about relative walkability and the influence of employment mix on walkability indexes in Missouri. 
+Finally, we developed a mobile layout that placed several of the widgets inside a widget controller element, 
+allowing for use on phones and computers.</p>
+<p class = "home">It was decided to exclude this effort from the final delivery for several reasons. For one, 
+the mobile layout needs work in order to bring it to full usability. The main view works well, but the 
+widgets display in a way that makes them somewhat unattractive and difficult to utilize as fully intended. As well, 
+there are some awkward limitations to Experience Builder, such as an inability to round numbers in tables that 
+gives ours a rather unprofessional appearance. It was also noted that some of the documentation feels relatively 
+unclear even to someone with experience in ArcGIS Online, which lead to some tasks taking longer than expected for a 
+drag-and-drop app builder. Finally, there has been some bugginess encountered, such as the map not displaying the first 
+block group in the table despite the data being present and not filtered out. As we were nearing the end of our development 
+time, it was decided to shelve this aspect of the project rather than improving it to the point where it could be usable.</p>
+
+<div class = "leafletbutton">
+    <a href="insert link">Check out our Experience Builder app</a>
+	</div>
+	
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>Positives</h2>
+     <ul>
+        <li>Method of creating apps that requires no coding knowledge.</li>
+        <li>Simple to create views for various sizes of screens.</li>
+        <li>Highly-customizable, with many different widgets and ways of displaying data available.</li>
+    </ul>
+    </div>
+    
+    <div class="column" style="background-color:#bbb;">
+      <h2>Negatives</h2>
+	    <ul>
+      <li>Unclear documentation regarding certain features, such as how to properly connect different widgets to one another.</li>
+      <li>Some persistent bugginess. For example, the first block group in the table refuses to display on the map.</li>
+      <li>Missing features, such as the ability to round off numbers within a table.</li>
+      <li>Requires a license from ESRI in order to use.</li>
+      <li>Difficult to collaborate, can't be edited by more than one user.</li>
+	    </ul>
+    </div>
+  </div>
+ 
+  <footer>
+    <p>@2024 Group14 Productions All rights reserved </p>
+  </footer>
+ </body>
+</html>
