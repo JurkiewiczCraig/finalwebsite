@@ -339,7 +339,7 @@ text-align:center;
 /* Ashwin - style for dashboard writeups ends */
 
 /* Ashwin - style for dashboard table starts */
-table {
+.datab:table {
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
